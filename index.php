@@ -6,5 +6,5 @@ $update = json_decode($update, true);
 $chatId = $request['message']['chat']['id'];
 $messageText = $request['message']['text'];
 
-$message = ['method' => 'sendMessage', 'chat_id' => $chatId, 'text' => $message];
+$message = ['method' => 'sendMessage', 'chat_id' => $chatId, 'text' => $messageText];
 echo json_encode($message);
