@@ -8,3 +8,4 @@ $messageText = $update['message']['text'];
 
 $message = ['method' => 'sendMessage', 'chat_id' => $chatId, 'text' => $messageText];
 echo json_encode($message);
+
