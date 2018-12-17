@@ -1,5 +1,5 @@
 <?php
-header('Content-type: application/json');
+$header = header('Content-type: application/json');
 $update = file_get_contents('php://input');
 $update = json_decode($update, true);
 

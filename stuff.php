@@ -6,7 +6,7 @@ class Game extends stuff{
     
 private $connection;
 
-public function __construct(array $message) {
+function __construct(array $message) {
     
     $this->connection = new Connection;
     
