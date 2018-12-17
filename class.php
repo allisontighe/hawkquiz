@@ -6,7 +6,7 @@ class Game
     
     private $chatId;
     
-     function __construct(Connection $connection, int $chatiD)
+   public function __construct(Connection $connection, int $chatiD)
     {
         $this->connection = $connection;
         
