@@ -1,10 +1,12 @@
 <?php 
 require_once 'class.php';
+require_once 'index.php';
+
 class Game extends stuff{
     
 private $connection;
 
-function __construct(array $message) {
+public function __construct(array $message) {
     
     $this->connection = new Connection;
     
