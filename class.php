@@ -6,7 +6,7 @@ class Game
     
     private $chatId;
     
-    public function __construct(Connection $connection, int $chatiD)
+     function __construct(Connection $connection, int $chatiD)
     {
         $this->connection = $connection;
         
@@ -20,6 +20,6 @@ class Game
         
         else return Bot::send('sendMessage', ['chat_id' => $chatId, 'text' => $text, 'parse_mode' => 'Markdown', 'reply_markup' => json_encode(['inline_keyboard' => $keyboard])]);
     }
-    public function __construct(array $message){
+    function __construct(array $message){
     }
 }
